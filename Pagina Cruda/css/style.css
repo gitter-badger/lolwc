@@ -5,93 +5,72 @@
 
 html{
     background-color: black;
+    background-image: url(../img/fondo.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 body{
     font-family:LolFont;
-    color:black;
 }
 
 .content{
-    background-image: url(../img/parchment.svg);
-    background-repeat: no-repeat;
+    background-image: url(../img/fondoDIV.png);
     background-size: cover;
-
+    background-repeat: no-repeat;
+    border:18px solid;
+    padding: 15px;
+    border-image:url(../img/bordeR.png) 30 stretch;
     width: 80%;
+    color:black;
     margin: auto;
     text-align: center;
 }
 
-#cssmenu,
-#cssmenu ul,
-#cssmenu li #cssmenu a {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 14px;
-    font-family: Helvetica;
-    line-height: 1;
-}
-#cssmenu li{width: auto}
-#cssmenu {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+nav li {
+    display: inline;
 }
 
-#cssmenu ul {
-    zoom: 1;
-    background: #a7bc7a url(images/pattern.png) top left repeat;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    border: 1px solid #839b4e;
-    -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+nav ul {
+    display: inline-block;
 }
 
-#cssmenu ul:before {
-    content: '';
-    display: block;
-}
-#cssmenu ul:after {
-    content: '';
-    display: table;
-    clear: both;
-}
-#cssmenu a,
-#cssmenu a:link,
-#cssmenu a:visited {
-    padding: 15px 20px;
-    display: block;
+/* Barra de Navegación*/ 
+.menu a{
+    background-image: url(../img/btnNavMiddle.png);
+    background-size: contain;
+    font-size:14px;
     text-decoration: none;
-    color: #ffffff;
-    text-shadow: 0 -1px 1px #586835;
-    border-right: 1px solid #839b4e;
-}
-#cssmenu a:hover {
-    color: #586835;
-    text-shadow: 0 1px 1px #bdcd9c;
-}
-#cssmenu li {
-    float: left;
-    border-right: 1px solid #b2c58b;
-}
-#cssmenu li:hover {
-    background: #9cb369 url(images/pattern.png) top left repeat;
-}
-#cssmenu li:first-child {
-    border-left: none;
-    -webkit-border-radius: 4px 0 0 4px;
-    -moz-border-radius: 4px 0 0 4px;
-    border-radius: 4px 0 0 4px;
+    float:left; 
+    color: #fff;
+    padding: 10px 60px;
+
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
 }
 
-#cssmenu li:last-child {
-    border-left: none;
-    -webkit-border-radius: 0px 0 0 4px;
-    -moz-border-radius: 0px 0 0 4px;
-    border-radius: 0px 0 0 4px;
+.menu a:hover {
+    background-image:  url(../img/btnHover.png), url(../img/btnNavMiddle.png);
+    background-size: cover, cover;
+}
+
+.menu .first{
+    background-image: url(../img/btnNavLeft.png);
+
+}.menu .first:hover{
+    background-image: url(../img/btnHover.png), url(../img/btnNavLeft.png);
+    background-size: cover,cover;
+    background-position: center,center;
+    padding-left: auto;
+}
+
+.menu .last{
+    background-image: url(../img/btnNavRight.png);
+    background-size: cover, cover;
+}.menu .last:hover{
+    background-image: url(../img/btnHover.png), url(../img/btnNavRight.png);
+    background-size: cover, cover;
 }
