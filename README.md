@@ -1,4 +1,6 @@
 # Cliente Web de League of Legends (CWLOL)
+
+[![Join the chat at https://gitter.im/mateosss/lolwc](https://badges.gitter.im/mateosss/lolwc.svg)](https://gitter.im/mateosss/lolwc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Cliente de League of Legends
 
 # Material de Ayuda
